@@ -1,122 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdul Baseer Phulpoto | Game Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Baseer Phulpoto | Game Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">Baseer.dev</div>
-    <nav class="nav-links">
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-      <button id="mode-toggle">🌙</button>
-    </nav>
-  </header>
+    <!-- Header/Navbar -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">ABP</a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm <span>Abdul Baseer Phulpoto</span></h1>
-      <h2>Game Developer</h2>
-      <p>Creating immersive experiences through interactive code and creativity.</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn">Hire Me</a>
-        <a href="#" class="btn-outline">Download CV</a>
-      </div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Abdul Baseer Phulpoto</h1>
+                <h2 class="hero-subtitle">Game Developer</h2>
+                <p class="hero-tagline">Crafting immersive digital experiences through code and creativity</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#" class="btn btn-secondary">Download CV</a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
 
-  <!-- About Me -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about-container">
-      <img src="https://media.licdn.com/dms/image/v2/D4E03AQGFH7jfD1xDSw/profile-displayphoto-shrink_800_800/B4EZZHJt5IHkAg-/0/1744950452724?e=1750896000&v=beta&t=NocQTmSbKp_Ge_M59Ncq63MC4ozNlQO_UbeNveJqmIA" alt="Abdul Baseer" />
-      <div>
-        <p>I’m a passionate game developer with a strong foundation in software engineering. I thrive on building engaging, interactive, and visually appealing gaming experiences using Unity and C#.</p>
-        <p>Seeking an internship opportunity at a dynamic Software company where I can leverage my academic background in software engineering and passion for game development. Eager to gain hands-on experience, enhance my technical skills, and contribute to innovative projects.</p>
-        <p><strong>Specialization:</strong> Game Development</p>
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <div class="img-box">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQGFH7jfD1xDSw/profile-displayphoto-shrink_800_800/B4EZZHJt5IHkAg-/0/1744950452724?e=1750896000&v=beta&t=NocQTmSbKp_Ge_M59Ncq63MC4ozNlQO_UbeNveJqmIA" alt="Abdul Baseer Phulpoto">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Seeking an internship opportunity at a dynamic Software company where I can leverage my academic background in software engineering and passion for game development. Eager to gain hands-on experience, enhance my technical skills, and contribute to innovative projects.</p>
+                    <p>Committed to learning from industry professionals and applying my knowledge to real-world challenges. I specialize in creating engaging game experiences with Unity and C#.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-title">Specialization:</span>
+                            <span class="info-value">Game Development</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Experience:</span>
+                            <span class="info-value">Seeking Internship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill">
-        <img src="https://cdn.worldvectorlogo.com/logos/unity-69.svg" alt="Unity" />
-        <div class="skill-bar" style="--level: 90%"><span>Unity - 90%</span></div>
-      </div>
-      <div class="skill">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="C#" />
-        <div class="skill-bar" style="--level: 85%"><span>C# - 85%</span></div>
-      </div>
-      <div class="skill">
-        <img src="https://cdn-icons-png.flaticon.com/512/1179/1179120.png" alt="OOP" />
-        <div class="skill-bar" style="--level: 80%"><span>OOP - 80%</span></div>
-      </div>
-      <div class="skill">
-        <img src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="Git" />
-        <div class="skill-bar" style="--level: 75%"><span>Git - 75%</span></div>
-      </div>
-      <div class="skill">
-        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721268.png" alt="DSA" />
-        <div class="skill-bar" style="--level: 70%"><span>DSA - 70%</span></div>
-      </div>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-content">
+                <div class="skills-box">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Unity</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">C#</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Data Structures & Algorithms</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">OOP</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-icons">
+                    <div class="icon-box">
+                        <i class="fab fa-unity"></i>
+                        <span>Unity</span>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-code"></i>
+                        <span>C#</span>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>DSA</span>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-cubes"></i>
+                        <span>OOP</span>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>KitchenChaos</h3>
-        <p>A fast-paced 3D cooking game made with Unity. Players must manage orders, ingredients, and cooking time under pressure. Features clean UI, timers, and multiplayer readiness.</p>
-        <p><strong>Tech:</strong> Unity, C#, .NET, ShaderLab</p>
-        <a href="https://github.com/Aberto7/KitchenChaos.git" target="_blank">View Code</a>
-      </div>
-      <div class="project-card">
-        <h3>School Sprint Saga</h3>
-        <p>A 3D runner game where a student must dodge traffic and obstacles to reach school in time. Includes a custom dialogue system and level design mechanics.</p>
-        <p><strong>Tech:</strong> Unity, C#, .NET, ShaderLab</p>
-        <a href="https://github.com/Aberto7/SchoolSprint.git" target="_blank">View Code</a>
-      </div>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://raw.githubusercontent.com/Aberto7/KitchenChaos/main/Assets/Sprites/UI/TitleScreen.png" alt="Kitchen Chaos Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Kitchen Chaos</h3>
+                        <p class="project-desc">A cooking simulation game where players manage a busy kitchen, prepare dishes under time pressure, and serve customers.</p>
+                        <div class="project-tech">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>ShaderLab</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Aberto7/KitchenChaos.git" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://raw.githubusercontent.com/Aberto7/SchoolSprint/main/Assets/Sprites/UI/TitleScreen.png" alt="School Sprint Saga Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">School Sprint Saga</h3>
+                        <p class="project-desc">An endless runner game set in a school environment where players navigate obstacles and collect items while racing against time.</p>
+                        <div class="project-tech">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>ShaderLab</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Aberto7/SchoolSprint.git" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 (Placeholder) -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400?text=Game+Project" alt="Game Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Upcoming Project</h3>
+                        <p class="project-desc">An exciting new game project currently in development. Stay tuned for more details!</p>
+                        <div class="project-tech">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link disabled">
+                                <i class="fab fa-github"></i> Coming Soon
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="education-container">
-      <p><strong>Degree:</strong> Bachelor of Science - Software Engineering</p>
-      <p><strong>Institute:</strong> Sindh Madressatul Islam University</p>
-      <p><strong>Year:</strong> 2022 - Present (2026)</p>
-    </div>
-  </section>
+    <!-- Education Section -->
+    <section class="education section" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3 class="education-degree">Bachelor of Science - Software Engineering</h3>
+                        <span class="education-institute">Sindh Madressatul Islam University</span>
+                        <span class="education-year">2022 - Present (Expected 2026)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:abdulbaseerphulpoto17@gmail.com">abdulbaseerphulpoto17@gmail.com</a></p>
-    <p>Phone: <a href="tel:+923032070405">+923032070405</a></p>
-    <div class="social-icons">
-      <a href="https://linkedin.com/in/abdul-baseer-phulpoto" target="_blank">LinkedIn</a>
-      <a href="https://github.com/Aberto7/" target="_blank">GitHub</a>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-title">Email</span>
+                            <a href="mailto:abdulbaseerphulpoto17@gmail.com" class="contact-value">abdulbaseerphulpoto17@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-title">Phone</span>
+                            <a href="tel:+923032070405" class="contact-value">+92 303 2070405</a>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://linkedin.com/in/abdul-baseer-phulpoto" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Aberto7" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Abdul Baseer Phulpoto. All rights reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&copy; <span id="year"></span> Abdul Baseer Phulpoto. All Rights Reserved.</p>
+                <div class="back-to-top">
+                    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
