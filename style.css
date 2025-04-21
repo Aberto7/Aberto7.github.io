@@ -2,6 +2,7 @@
 :root {
   --primary-color: #6c63ff;
   --primary-dark: #564fd8;
+  --platinum-color: #C0C0C0;
   --secondary-color: #ff6584;
   --dark-color: #2d2d39;
   --dark-light: #3a3a4a;
@@ -19,6 +20,7 @@
   --dark-color: #f8f9fa;
   --dark-light: #e9ecef;
   --light-color: #2d2d39;
+  --blueGrey-color: #7393B3;
   --light-dark: #3a3a4a;
   --text-color: #e9ecef;
   --text-light: #adb5bd;
@@ -118,13 +120,13 @@ img {
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--primary-color);
+  color: var(--white);
   border: 2px solid var(--primary-color);
   margin-left: 15px;
 }
 
 .btn-secondary:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primary-dark);
   color: var(--white);
   transform: translateY(-3px);
   box-shadow: var(--box-shadow);
@@ -163,6 +165,10 @@ img {
   height: 80px;
 }
 
+.theme-toggle:hover {
+  transform: scale(1.05);
+}
+
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
@@ -183,13 +189,14 @@ img {
 }
 
 [data-theme="dark"] .nav-link {
-  color: var(--light-color);
+  color: var(--blueGrey-color);
 }
 
+/* Nav Link Styles (keep these the same) */
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 20px;
   width: 0;
   height: 2px;
@@ -205,17 +212,22 @@ img {
   color: var(--primary-color);
 }
 
+/* Improved Theme Toggle Styles */
 .theme-toggle {
   position: relative;
   width: 60px;
   height: 30px;
-  background-color: var(--light-dark);
+  background-color: var(--platinum-color);
   border-radius: 50px;
-  margin-left: 30px;
+  margin-left: 1px; /* Changed from 30px to auto */
+  margin-right: 15px; /* Added */
   cursor: pointer;
   display: flex;
   align-items: center;
-  padding: 0 5px;
+  justify-content: space-between;
+  padding: 0 8px;
+  order: 1; /* Ensures proper order in flex layout */
+  transition: var(--transition);
 }
 
 [data-theme="dark"] .theme-toggle {
@@ -223,9 +235,10 @@ img {
 }
 
 .theme-toggle i {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--dark-color);
   transition: var(--transition);
+  z-index: 1;
 }
 
 [data-theme="dark"] .theme-toggle i {
@@ -239,13 +252,14 @@ img {
 
 .theme-toggle .fa-sun {
   position: absolute;
+  right: 8px;
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateX(10px);
 }
 
 [data-theme="dark"] .theme-toggle .fa-moon {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(-10px);
 }
 
 [data-theme="dark"] .theme-toggle .fa-sun {
@@ -253,28 +267,36 @@ img {
   transform: translateX(0);
 }
 
-.hamburger {
-  display: none;
-  width: 30px;
-  height: 20px;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  z-index: 1001;
-}
+/* Add this to your existing media query for mobile */
+@media (max-width: 768px) {
+  .theme-toggle {
+    margin: 15px auto; /* Centers in mobile menu */
+    order: 0; /* Reset order for mobile */
+  }
+  
+  /* Keep existing hamburger styles */
+  .hamburger {
+    display: flex;
+    width: 30px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1001;
+  }
 
-.hamburger .bar {
-  width: 100%;
-  height: 3px;
-  background-color: var(--dark-color);
-  transition: var(--transition);
-  border-radius: 3px;
-}
+  .hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--dark-color);
+    transition: var(--transition);
+    border-radius: 3px;
+  }
 
-[data-theme="dark"] .hamburger .bar {
-  background-color: var(--light-color);
+  [data-theme="dark"] .hamburger .bar {
+    background-color: var(--light-color);
+  }
 }
-
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -701,7 +723,7 @@ img {
 }
 
 [data-theme="dark"] .contact-value {
-  color: var(--light-color);
+  color: var(--platinum-color);
 }
 
 .contact-value:hover {
